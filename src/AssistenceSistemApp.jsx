@@ -1,7 +1,9 @@
+import {LoginView} from "./pages/Login/LoginView"
+
 export const AssistenceSistemApp = () =>{
     return (
         <>
-         <h1>holad dev</h1>
+         <LoginView/>
         </>
     )
 }

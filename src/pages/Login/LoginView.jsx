@@ -1,22 +1,29 @@
+import Button from "../../components/Button/Button"
+import TextField from "../../components/TextField/TextField"
+
 export const LoginView = () =>{
     return (
         <>
             <div className="container my-5" >  
-                <div className="row">
-                    <div className="col">
+                <div className="row justify-content-center">
+                    <div className="col-md-4">
                         <div className="card">
                             <div className="card-body">
-                                <h1>Welcome Back</h1>
-                                <h3>Please enter you details to sing in</h3>
-                                <p>Employe ID</p>
-                                <div class="input-group my-2">
-                                    <input type="text" class="form-control" id="email"></input>
-                                </div>
-                                <p>Password</p>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="password"></input>
-                                </div>
-                                <button clasName="btn btn-primary my-3">SING IN</button>
+                                <h1 className="mb-3">Welcome Back</h1>
+                                <h3 className="mb-3">Please enter you details to sing in</h3>
+                                 <TextField 
+                                    label = "correo"
+                                    type="email"
+                                    //value={email}
+                                    //onChange={(e) => setEmail(e.target.value)}
+                                 />
+                                 <TextField
+                                    label="contraseña"
+                                    type="password"
+                                    //value={password}
+                                    //onChange={(e) => setPassword(e.target.value)}
+                                 />
+                                <Button variant="success" clasName="my-3 w-100">SING IN</Button>
                             </div>
                         </div>
                     </div>
